@@ -162,22 +162,6 @@ body {
   animation: floatUpDown 3s ease-in-out infinite;
 }
 
-/* Responsive Design */
-@media (max-width: 900px) {
-  .hero-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-text {
-    max-width: 100%;
-  }
-
-  .hero-image {
-    margin-top: 30px;
-  }
-}
-
 /*top button styling*/
 
 .top-button {
@@ -363,11 +347,11 @@ body {
 }
 
 .content6 {
-  height: 700px;
+  min-height: 700px;
   background-color: var(--color3);
   text-align: center;
   margin-top: 80px;
-  padding-bottom: 50em;
+  padding:50px 20px;
 }
 
 .content6 h2 {
@@ -613,3 +597,133 @@ body {
 .developer p span {
   color: var(--color2);
 }
+
+/* =================== RESPONSIVE FIXES =================== */
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  .hero-image {
+    margin-top: 30px;
+    
+  }
+}
+
+/* Reduce nav gap and font size on smaller screens */
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2em;
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .hero {
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  .hero-text p {
+    font-size: 1.1em;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+  }
+
+  .left img,
+  .content4 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .content2,
+  .content-section,
+  .content4{
+    flex-direction: column;
+    text-align: center;
+    padding: 0 20px;
+    
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em 1em;
+  }
+
+  .form {
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 1em;
+  }
+
+  .form .leftside,
+  .form .rightside {
+    width: 100%;
+    padding: 2em 1em;
+  }
+
+  .top-button {
+    left: auto;
+    right: 20px;
+    bottom: 30px;
+    top: auto;
+    width: 50px;
+    height: 50px;
+  }
+
+  .top-button i {
+    font-size: 1em;
+  }
+
+  .digit {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .gallery {
+    padding: 2em 1em;
+  }
+
+  .octagonWrap {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+  }
+
+  .popup-content {
+    width: 90vw;
+  }
+}
+
